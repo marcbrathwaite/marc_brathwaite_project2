@@ -1,0 +1,24 @@
+.nav {
+    background: $light-Grey-Blue;
+    display: flex;
+    justify-content: center;
+    &__list {
+        width: 40%;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__link {
+        text-decoration: none;
+        @include primaryFont(20);
+        line-height: 29px;
+
+        &--active {
+            @extend .nav__link;
+            color: $white-shade;
+        }
+   
+    }
+}
