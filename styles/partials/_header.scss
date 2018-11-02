@@ -1,8 +1,8 @@
 .header {
-    height: 90vh;
+    height: 500px;
     background: $light-Grey-Blue;
     &__container1 {
-        padding-top: 30vh;
+        height: 70%;
         display: flex;
         justify-content: flex-end;
     }
@@ -10,26 +10,27 @@
     &__text-container {
         position: relative;
         width: 50%;
+        height: 100%;
         display:flex;
-        z-index: 10;
+        padding-top:20%;
     }
     
     &__container2 {
         position: relative;
+        height: 20%;
     }
 
     &__img-container {
         position: absolute;
-        width: 60%;
-        top: -40vh;
-        height: 80vh;
+        background: url("../img/home-image-1-b.jpg");
+        background-size: cover;
+        width: 45%;
+        height: 450px;
+        top: -300px;
+        left: 0; /*new code*/
+        box-shadow: 10px 10px white;
     }
     
 }
 
-.header-img {
-    display:block;
-    height:100%;
-    box-shadow: 10px 10px white;
-}
 

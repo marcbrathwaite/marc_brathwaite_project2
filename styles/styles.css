@@ -246,11 +246,11 @@ html {
 
 .wrapper {
   max-width: 1280px;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 
-.header1, .header1--main {
+.header1 {
   font-family: 'Oswald', sans-serif;
   color: #171717;
   font-weight: bold;
@@ -261,24 +261,28 @@ html {
 }
 
 .header1--main {
+  font-family: 'Oswald', sans-serif;
+  color: #171717;
+  font-weight: bold;
+  font-size: 120px;
+  font-size: 12rem;
+  text-transform: uppercase;
   position: relative;
-  background: #b9dde7;
 }
 
 .header1--main::after {
   content: "";
   display: inline-block;
-  background: url("../img/Circle-text.png") no-repeat;
+  background: url("../img/Circle-text-cropped.png") no-repeat;
   background-size: contain;
   position: absolute;
-  top: -30px;
-  right: -40px;
-  width: 100px;
-  height: 100px;
-  -webkit-transform: rotate(-25deg);
-  -ms-transform: rotate(-25deg);
-  transform: rotate(-25deg);
-  z-index: -10;
+  width: 150px;
+  height: 150px;
+  top: -75px;
+  right: -75px;
+  -webkit-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  transform: rotate(-30deg);
 }
 
 .header2 {
@@ -291,12 +295,12 @@ html {
 }
 
 .header {
-  height: 90vh;
+  height: 500px;
   background: #b9dde7;
 }
 
 .header__container1 {
-  padding-top: 30vh;
+  height: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -308,26 +312,27 @@ html {
 .header__text-container {
   position: relative;
   width: 50%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 10;
+  padding-top: 20%;
 }
 
 .header__container2 {
   position: relative;
+  height: 20%;
 }
 
 .header__img-container {
   position: absolute;
-  width: 60%;
-  top: -40vh;
-  height: 80vh;
-}
-
-.header-img {
-  display: block;
-  height: 100%;
+  background: url("../img/home-image-1-b.jpg");
+  background-size: cover;
+  width: 45%;
+  height: 450px;
+  top: -300px;
+  left: 0;
+  /*new code*/
   -webkit-box-shadow: 10px 10px white;
   box-shadow: 10px 10px white;
 }
@@ -341,6 +346,7 @@ html {
   -ms-flex-pack: center;
   justify-content: center;
   padding: 10px 0;
+  height: 10%;
 }
 
 .nav__list {

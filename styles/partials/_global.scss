@@ -27,38 +27,33 @@ html {
 
 .wrapper {
     max-width: 1280px;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
 
 .header1 {
     @include primaryFont(80);
     line-height: 92px;
+
     &--main {
-        @extend .header1;
-        position: relative;   
-        background: $light-Grey-Blue;
+        @include primaryFont(120);
+        position: relative;
 
         &::after {
             content: "";
             display: inline-block;
-            background: url("../img/Circle-text.png") no-repeat;
+            background: url("../img/Circle-text-cropped.png") no-repeat;
             background-size: contain;
             position: absolute;
-            top: -30px;
-            right: -40px;
-            width: 100px;
-            height: 100px;
-            transform: rotate(-25deg);
-            z-index: -10;
+            width: 150px;
+            height: 150px;
+            top: -75px;
+            right: -75px;
+            transform: rotate(-30deg);
         }
-    }    
+    }
 }
 
 .header2 {
     @include primaryFont(42);
 }
-
-
-
-
