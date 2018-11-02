@@ -8,6 +8,7 @@ $white-shade: #f6f6f6;
 @mixin primaryFont($size) {
     font-family: 'Oswald', sans-serif;
     color: $black;
+    font-weight: bold;
     font-size: $size * 1px;
     font-size: ($size/10) * 1rem;
     text-transform: uppercase;
@@ -26,18 +27,30 @@ html {
 
 .wrapper {
     max-width: 1280px;
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 
 .header1 {
     @include primaryFont(80);
-    line-height: 80px;
+    line-height: 92px;
     &--main {
         @extend .header1;
+        position: relative;   
+        background: $light-Grey-Blue;
 
         &::after {
             content: "";
+            display: inline-block;
+            background: url("../img/Circle-text.png") no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: -30px;
+            right: -40px;
+            width: 100px;
+            height: 100px;
+            transform: rotate(-25deg);
+            z-index: -10;
         }
     }    
 }

@@ -2,8 +2,10 @@
     background: $light-Grey-Blue;
     display: flex;
     justify-content: center;
+    padding: 10px 0;
     &__list {
-        width: 40%;
+        width: 50%;
+        // flex: 1 0 50%;
         list-style: none;
         display: flex;
         justify-content: space-between;

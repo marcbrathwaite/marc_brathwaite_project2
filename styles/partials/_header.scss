@@ -1,4 +1,35 @@
 .header {
-    height: 95vh;
+    height: 90vh;
     background: $light-Grey-Blue;
+    &__container1 {
+        padding-top: 30vh;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__text-container {
+        position: relative;
+        width: 50%;
+        display:flex;
+        z-index: 10;
+    }
+    
+    &__container2 {
+        position: relative;
+    }
+
+    &__img-container {
+        position: absolute;
+        width: 60%;
+        top: -40vh;
+        height: 80vh;
+    }
+    
 }
+
+.header-img {
+    display:block;
+    height:100%;
+    box-shadow: 10px 10px white;
+}
+
