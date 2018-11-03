@@ -1,0 +1,46 @@
+.section {
+    padding: 100px 0;
+
+    &__text {
+        @include secondaryFont(20);
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+
+    &__btn {
+        display: inline-block;
+        @include primaryFont(20);
+        line-height: 32px;
+        padding: 10px 20px;
+        background: $accent;
+    }
+}
+
+.whoisharper {
+    background: $white-shade;
+    
+    &__container {
+        display: flex;
+        justify-content: flex-end;  
+    }
+    &__text-container {
+        width: 50%
+    }
+}
+
+.building-pic {
+    background: url("../img/home-image-2.jpg");
+    background-size:cover;
+    background-position: center;
+    padding: 200px 0;
+}
+
+.icon-link {
+    @extend .whoisharper;
+
+}
+
+.icon-links__container {
+    display: flex;
+    justify-content: space-around;
+}

@@ -240,6 +240,10 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -250,7 +254,7 @@ html {
   margin: 0 auto;
 }
 
-.header1 {
+.font1 {
   font-family: 'Oswald', sans-serif;
   color: #171717;
   font-weight: bold;
@@ -260,7 +264,7 @@ html {
   line-height: 92px;
 }
 
-.header1--main {
+.font1--main {
   font-family: 'Oswald', sans-serif;
   color: #171717;
   font-weight: bold;
@@ -270,7 +274,7 @@ html {
   position: relative;
 }
 
-.header1--main::after {
+.font1--main::after {
   content: "";
   display: inline-block;
   background: url("../img/Circle-text-cropped.png") no-repeat;
@@ -285,13 +289,28 @@ html {
   transform: rotate(-30deg);
 }
 
-.header2 {
+.font2, .font2--nav {
   font-family: 'Oswald', sans-serif;
   color: #171717;
   font-weight: bold;
   font-size: 42px;
   font-size: 4.2rem;
   text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.font2--nav {
+  margin: 0;
+}
+
+.font3 {
+  font-family: 'Oswald', sans-serif;
+  color: #171717;
+  font-weight: bold;
+  font-size: 32px;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .header {
@@ -375,9 +394,62 @@ html {
   color: #f6f6f6;
 }
 
-section {
-  padding: 200px 0;
+.section {
+  padding: 100px 0;
+}
+
+.section__text {
+  font-family: 'Cabin', sans-serif;
+  color: #171717;
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+.section__btn {
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  color: #171717;
+  font-weight: bold;
+  font-size: 20px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 32px;
+  padding: 10px 20px;
+  background: #f38d8d;
+}
+
+.whoisharper, .icon-link {
   background: #f6f6f6;
+}
+
+.whoisharper__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.whoisharper__text-container {
+  width: 50%;
+}
+
+.building-pic {
+  background: url("../img/home-image-2.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+}
+
+.icon-links__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
 }
 
 /*# sourceMappingURL=styles.css.map */

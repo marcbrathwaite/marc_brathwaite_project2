@@ -31,7 +31,7 @@ html {
     margin: 0 auto;
 }
 
-.header1 {
+.font1 {
     @include primaryFont(80);
     line-height: 92px;
 
@@ -54,6 +54,19 @@ html {
     }
 }
 
-.header2 {
+.font2 {
     @include primaryFont(42);
+    margin-bottom: 20px;
+    &--nav {
+        @extend .font2;
+        margin:0;
+    }
 }
+
+.font3 {
+    @include primaryFont(32);
+    margin-bottom: 20px;
+}
+
+
+
