@@ -35,12 +35,83 @@
     padding: 200px 0;
 }
 
-.icon-link {
+.icon-sec {
     @extend .whoisharper;
 
-}
 
-.icon-links__container {
-    display: flex;
-    justify-content: space-around;
+    &__block {
+        display: flex;
+
+        &:first-of-type {
+            padding-bottom: 50px;
+        }
+        
+    }
+
+    &__container {
+        display: flex;
+        width:50%;
+
+        &:last-of-type .icon-sec__text-Container {
+            padding-right: 0;
+        }
+        
+    }
+
+    &__icon-container {
+        width: 10%;
+    }
+
+    &__text-Container {
+        width: 90%;
+        padding: 0 10px;
+    }
+
+
+    &__link {
+        @include primaryFont(18);
+        display: block;
+        margin: 0;
+        height: 40px;
+        width: 40px;
+        background: $light-Grey-Blue;
+        border-radius: 50%;
+    }
+    
+    &__icon {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::before {
+            display: block;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            color: $black;
+            height: 20px;
+            margin:0;
+        }
+        
+        &--photos::before {
+            content: "\f03e";
+        }
+
+        &--about::before {
+            content: "\f406";
+        }
+
+        &--blog::before {
+            content: "\f108";
+        }
+
+        &--contact::before {
+            content: "\f095";
+        }
+    }
 }

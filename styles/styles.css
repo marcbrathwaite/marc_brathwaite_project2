@@ -420,7 +420,7 @@ html {
   background: #f38d8d;
 }
 
-.whoisharper, .icon-link {
+.whoisharper, .icon-sec {
   background: #f6f6f6;
 }
 
@@ -444,12 +444,92 @@ html {
   padding: 200px 0;
 }
 
-.icon-links__container {
+.icon-sec__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+}
+
+.icon-sec__block:first-of-type {
+  padding-bottom: 50px;
+}
+
+.icon-sec__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+.icon-sec__container:last-of-type .icon-sec__text-Container {
+  padding-right: 0;
+}
+
+.icon-sec__icon-container {
+  width: 10%;
+}
+
+.icon-sec__text-Container {
+  width: 90%;
+  padding: 0 10px;
+}
+
+.icon-sec__link {
+  font-family: 'Oswald', sans-serif;
+  color: #171717;
+  font-weight: bold;
+  font-size: 18px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  display: block;
+  margin: 0;
+  height: 40px;
+  width: 40px;
+  background: #b9dde7;
+  border-radius: 50%;
+}
+
+.icon-sec__icon {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.icon-sec__icon::before {
+  display: block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  color: #171717;
+  height: 20px;
+  margin: 0;
+}
+
+.icon-sec__icon--photos::before {
+  content: "\f03e";
+}
+
+.icon-sec__icon--about::before {
+  content: "\f406";
+}
+
+.icon-sec__icon--blog::before {
+  content: "\f108";
+}
+
+.icon-sec__icon--contact::before {
+  content: "\f095";
 }
 
 /*# sourceMappingURL=styles.css.map */
