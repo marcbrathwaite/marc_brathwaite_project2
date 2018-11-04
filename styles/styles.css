@@ -238,6 +238,8 @@ h1, h2, h3, h4, h5, h6, ul, li, p, figure {
 
 img {
   max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 a {
@@ -369,7 +371,7 @@ html {
 }
 
 .nav__list {
-  width: 50%;
+  width: 60%;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -395,7 +397,7 @@ html {
 }
 
 .section {
-  padding: 100px 0;
+  padding: 75px 0;
 }
 
 .section__text {
@@ -420,7 +422,7 @@ html {
   background: #f38d8d;
 }
 
-.whoisharper, .icon-sec {
+.whoisharper, .icon-sec, .harperjourney {
   background: #f6f6f6;
 }
 
@@ -444,25 +446,26 @@ html {
   padding: 200px 0;
 }
 
-.icon-sec__block {
+.icon-sec__block, .blog-preview__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.icon-sec__block:first-of-type {
-  padding-bottom: 50px;
+.icon-sec__block:first-of-type, .blog-preview__block:first-of-type {
+  margin-bottom: 50px;
 }
 
 .icon-sec__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 47.5%;
+  margin-right: 5%;
 }
 
-.icon-sec__container:last-of-type .icon-sec__text-Container {
-  padding-right: 0;
+.icon-sec__container:last-of-type {
+  margin-right: 0;
 }
 
 .icon-sec__icon-container {
@@ -471,7 +474,7 @@ html {
 
 .icon-sec__text-Container {
   width: 90%;
-  padding: 0 10px;
+  margin-left: 10px;
 }
 
 .icon-sec__link {
@@ -530,6 +533,49 @@ html {
 
 .icon-sec__icon--contact::before {
   content: "\f095";
+}
+
+.blog-preview {
+  padding: 50px 0;
+}
+
+.blog-preview__block:first-of-type {
+  margin-bottom: 0;
+}
+
+.blog-preview__container-1 {
+  width: 47.5%;
+  margin-right: 5%;
+  position: relative;
+}
+
+.blog-preview__container-1--text {
+  padding-top: 70px;
+}
+
+.blog-preview__img-1 {
+  position: absolute;
+  display: block;
+  top: -78px;
+  width: 100%;
+  height: 120%;
+  -webkit-box-shadow: 15px 15px 0px #227284, -150px 15px 0px #227284;
+  box-shadow: 15px 15px 0px #227284, -150px 15px 0px #227284;
+}
+
+.blog-preview__img-2 {
+  position: absolute;
+  display: block;
+  bottom: -77px;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 150px 15px 0px #b9dde7, 15px 15px 0px #b9dde7;
+  box-shadow: 150px 15px 0px #b9dde7, 15px 15px 0px #b9dde7;
+}
+
+.blog-preview__container-2 {
+  width: 47.5%;
+  position: relative;
 }
 
 /*# sourceMappingURL=styles.css.map */
