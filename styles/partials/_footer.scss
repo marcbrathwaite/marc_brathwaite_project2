@@ -1,0 +1,10 @@
+.footer {
+    background: $black;
+    padding: 5px;
+
+    &__text {
+        @include secondaryFont(20);
+        text-align: center;
+        color: $white-shade;
+    }
+}

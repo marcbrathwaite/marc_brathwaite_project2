@@ -1,5 +1,5 @@
 .section {
-    padding: 75px 0;
+    padding: 100px 0;
 
     &__text {
         @include secondaryFont(20);
@@ -151,7 +151,7 @@
 
     &__img-2 {
         position: absolute;
-        display:block;
+        // display:block;
         width: 100%;
         height: 125%;
         box-shadow: 150px 15px 0px $light-Grey-Blue, 15px 15px 0px $light-Grey-Blue;
@@ -170,4 +170,44 @@
 
 .harperjourney {
     @extend .whoisharper;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__photo-container {
+        // width: 30%;
+        height: 50%;
+        box-shadow: 10px 10px $dusk-Blue;
+    }
+
+    &__text-container {
+        width: 60%;
+    }
+
 }
+
+.photos {
+    &__container {
+        display:flex;
+        list-style: none;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 30%;
+    }
+
+    &__photo {
+        transition: transform 0.8s;
+    }
+
+    &__link {
+        &:hover .photos__photo{
+            transform: scale(1.2);
+        }
+    }
+}
+
+
