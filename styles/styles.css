@@ -422,6 +422,15 @@ html {
   background: #f38d8d;
 }
 
+.section__btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
 .whoisharper, .icon-sec, .harperjourney {
   background: #f6f6f6;
 }
@@ -540,22 +549,21 @@ html {
 }
 
 .blog-preview__block:first-of-type {
-  margin-bottom: 0;
+  margin-bottom: 50px;
 }
 
 .blog-preview__container-1 {
-  width: 47.5%;
-  margin-right: 5%;
+  width: 50%;
   position: relative;
 }
 
 .blog-preview__container-1--text {
-  padding-top: 70px;
+  width: 40%;
+  margin-right: 10%;
 }
 
 .blog-preview__img-1 {
   position: absolute;
-  display: block;
   top: -78px;
   width: 100%;
   height: 120%;
@@ -566,16 +574,20 @@ html {
 .blog-preview__img-2 {
   position: absolute;
   display: block;
-  bottom: -77px;
   width: 100%;
-  height: 100%;
+  height: 125%;
   -webkit-box-shadow: 150px 15px 0px #b9dde7, 15px 15px 0px #b9dde7;
   box-shadow: 150px 15px 0px #b9dde7, 15px 15px 0px #b9dde7;
 }
 
 .blog-preview__container-2 {
-  width: 47.5%;
+  width: 50%;
   position: relative;
+}
+
+.blog-preview__container-2--text {
+  width: 40%;
+  margin-left: 10%;
 }
 
 /*# sourceMappingURL=styles.css.map */
