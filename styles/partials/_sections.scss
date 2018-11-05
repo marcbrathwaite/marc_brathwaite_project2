@@ -211,6 +211,7 @@
 }
 
 
+//Possibly consolidate contact and blog
 .contact {
     @extend .whoisharper;
 
@@ -223,7 +224,7 @@
 
     &__aside {
         background: white;
-        width: 35%;
+        width: 32%;
         padding: 20px;
         // height: 40%;
     }
@@ -266,7 +267,7 @@
 
     &__form {
         background: $white-shade;
-        width: 60%;
+        width: 63%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -298,6 +299,45 @@
         background: $accent;
         width: 100%;
     }
+}
+
+.blog {
+    @extend .whoisharper;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    &__aside {
+        width: 32%;
+        background: $white-shade;
+        
+        &-box {
+            padding: 20px;
+            background: white;
+            margin-bottom: 20px;
+        }
+
+        &-img-container {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        
+        &-text {
+            @extend .section__text;
+            margin: 0;
+        }   
+    }
+    
+
+    &__post-container {
+        width: 63%;
+    }
+
+
 }
 
 

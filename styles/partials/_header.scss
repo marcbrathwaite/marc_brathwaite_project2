@@ -1,7 +1,7 @@
 .header {
     height: 500px;
     background: $light-Grey-Blue;
-    &--contact {
+    &--other {
         height: 400px;
     }
     &__container1 {
@@ -34,18 +34,25 @@
         box-shadow: 10px 10px white;
     }
 
-    &__contact-container {
+    &__other-container {
         height: 85%;
-        background: url("../img/contact-image-1.jpg") center;
         background-size: cover;
+        
+        &--contact {
+            background: url("../img/contact-image-1.jpg") center;
+        }
+
+        &--blog {
+            background: url("../img/blog-image-1.jpg") center;
+        }
     }
 
-    &__contact-text-container {
+    &__other-text-container {
         height: 100%;
         position:relative;
     }
 
-    &__contact-text {
+    &__other-text {
         position: absolute;
         bottom:-43px;
     }

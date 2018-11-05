@@ -5,10 +5,10 @@
     padding: 10px 0;
     height: 10%;
 
-    &--contact {
+    &--other {
         height: 15%;
     }
-    
+
     &__list {
         width: 60%;
         // flex: 1 0 50%;
@@ -16,6 +16,11 @@
         display: flex;
         justify-content: space-between;
 
+    }
+
+    &__item {
+        display:flex;
+        align-items: center;
     }
 
     &__link {
