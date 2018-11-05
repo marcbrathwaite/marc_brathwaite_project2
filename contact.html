@@ -1,14 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HARPER - Contact</title>
     <link href="https://fonts.googleapis.com/css?family=Cabin|Oswald:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
-    
+    <header class="header header--contact">
+        <nav class="nav nav--contact wrapper">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="./index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">About</a>
+                </li>
+                <li class="nav__item"><a href="./index.html" class="nav__link">
+                        <h2 class="font2--nav">Harper</h2>
+                    </a></li>
+                <li class="nav__item"><a href="./blog.html" class="nav__link">Blog</a></li>
+                <li class="nav__item"><a href="./contact.html" class="nav__link nav__link--active">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header__contact-container">
+            <div class=" wrapper header__contact-text-container">
+                <h1 class="font1 header__contact-text">Contact Me</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section contact">
+            <div class="wrapper contact__container">
+                <aside class="contact__aside">
+                    <ul class="contact__social-media">
+                        <li>
+                            <a href="http://facebook.com" class="contact__sm-link">
+                                <i class="fab fa-facebook-f"></i>
+                                <span class="visuallyhidden">Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://twitter.com" class="contact__sm-link">
+                                <i class="fab fa-twitter"></i>
+                                <span class="visuallyhidden">Twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://linkedin.com" class="contact__sm-link">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span class="visuallyhidden">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://instagram.com" class="contact__sm-link">
+                                <i class="fab fa-instagram"></i>
+                                <span class="visuallyhidden">Instagram</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="contact__email-container">
+                        <a href="mailto:info@email.com" class="contact__email">info@email.com</a>
+                    </p>
+                    <p class="contact__address">
+                        <span class="contact__address-line">123 - 456 - 7890</span>
+                        <span class="contact__address-line">123 Queen Street West, Unit 10</span>
+                        <span class="contact__address-line">Toronto, Ontario</span>
+                        <span class="contact__address-line">M5V2D5</span>
+                    </p>
+
+                </aside>
+                <form action="#" method="POST" class="contact__form">
+                    <label class="visuallyhidden" for="email">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Name" class="contact__info contact__item"
+                        required>
+
+                    <label class="visuallyhidden" for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email Address" class="contact__info contact__item"
+                        required>
+
+                    <label class="visuallyhidden" for="email">Message</label>
+                    <textarea name="message" id="message" placeholder="Message" class="contact__message contact__item"></textarea>
+
+                    <input type="submit" value="Submit" class="contact__submit contact__item">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="wrapper footer__text">
+            Copyright © 2018 HackerYou
+        </p>
+    </footer>
 </body>
+
 </html>

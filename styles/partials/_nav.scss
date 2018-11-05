@@ -4,6 +4,11 @@
     justify-content: center;
     padding: 10px 0;
     height: 10%;
+
+    &--contact {
+        height: 15%;
+    }
+    
     &__list {
         width: 60%;
         // flex: 1 0 50%;
@@ -19,7 +24,6 @@
         line-height: 29px;
 
         &--active {
-            @extend .nav__link;
             color: $white-shade;
         }
    

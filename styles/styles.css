@@ -316,9 +316,29 @@ html {
   margin-bottom: 20px;
 }
 
+::-webkit-input-placeholder {
+  color: #171717;
+}
+
+:-ms-input-placeholder {
+  color: #171717;
+}
+
+::-ms-input-placeholder {
+  color: #171717;
+}
+
+::placeholder {
+  color: #171717;
+}
+
 .header {
   height: 500px;
   background: #b9dde7;
+}
+
+.header--contact {
+  height: 400px;
 }
 
 .header__container1 {
@@ -359,6 +379,22 @@ html {
   box-shadow: 10px 10px white;
 }
 
+.header__contact-container {
+  height: 85%;
+  background: url("../img/contact-image-1.jpg") center;
+  background-size: cover;
+}
+
+.header__contact-text-container {
+  height: 100%;
+  position: relative;
+}
+
+.header__contact-text {
+  position: absolute;
+  bottom: -43px;
+}
+
 .nav {
   background: #b9dde7;
   display: -webkit-box;
@@ -369,6 +405,10 @@ html {
   justify-content: center;
   padding: 10px 0;
   height: 10%;
+}
+
+.nav--contact {
+  height: 15%;
 }
 
 .nav__list {
@@ -382,7 +422,7 @@ html {
   justify-content: space-between;
 }
 
-.nav__link, .nav__link--active {
+.nav__link {
   text-decoration: none;
   font-family: 'Oswald', sans-serif;
   color: #171717;
@@ -410,7 +450,7 @@ html {
   margin-bottom: 20px;
 }
 
-.section__btn {
+.section__btn, .contact__submit {
   display: inline-block;
   font-family: 'Oswald', sans-serif;
   color: #171717;
@@ -432,7 +472,7 @@ html {
   justify-content: flex-end;
 }
 
-.whoisharper, .icon-sec, .harperjourney {
+.whoisharper, .icon-sec, .harperjourney, .contact {
   background: #f6f6f6;
 }
 
@@ -635,6 +675,126 @@ html {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
+}
+
+.contact__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.contact__aside {
+  background: white;
+  width: 35%;
+  padding: 20px;
+}
+
+.contact__social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.contact__sm-link {
+  font-family: 'Oswald', sans-serif;
+  color: #171717;
+  font-weight: bold;
+  font-size: 24px;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  color: #227284;
+  padding: 0 20px;
+}
+
+.contact__sm-link:first-of-type {
+  padding-left: 0;
+}
+
+.contact__email-container {
+  margin-bottom: 15px;
+}
+
+.contact__email {
+  font-family: 'Oswald', sans-serif;
+  color: #171717;
+  font-weight: bold;
+  font-size: 20px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-transform: none;
+}
+
+.contact__address {
+  font-family: 'Cabin', sans-serif;
+  color: #171717;
+  font-size: 20px;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.contact__address-line {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact__form {
+  background: #f6f6f6;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.contact__item {
+  border: none;
+  background: white;
+}
+
+.contact__info {
+  width: 49%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-family: 'Cabin', sans-serif;
+  color: #171717;
+  font-size: 20px;
+  font-size: 2rem;
+}
+
+.contact__message {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+  padding: 20px 10px;
+  font-family: 'Cabin', sans-serif;
+  color: #171717;
+  font-size: 20px;
+  font-size: 2rem;
+}
+
+.contact__submit {
+  background: #f38d8d;
+  width: 100%;
 }
 
 .footer {

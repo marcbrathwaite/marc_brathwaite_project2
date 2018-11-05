@@ -68,5 +68,9 @@ html {
     margin-bottom: 20px;
 }
 
+::placeholder {
+    color: $black;
+}
+
 
 

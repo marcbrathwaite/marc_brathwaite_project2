@@ -1,6 +1,9 @@
 .header {
     height: 500px;
     background: $light-Grey-Blue;
+    &--contact {
+        height: 400px;
+    }
     &__container1 {
         height: 70%;
         display: flex;
@@ -29,6 +32,22 @@
         top: -300px;
         left: 0; /*new code*/
         box-shadow: 10px 10px white;
+    }
+
+    &__contact-container {
+        height: 85%;
+        background: url("../img/contact-image-1.jpg") center;
+        background-size: cover;
+    }
+
+    &__contact-text-container {
+        height: 100%;
+        position:relative;
+    }
+
+    &__contact-text {
+        position: absolute;
+        bottom:-43px;
     }
     
 }
