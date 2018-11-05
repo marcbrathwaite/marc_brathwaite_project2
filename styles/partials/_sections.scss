@@ -291,6 +291,7 @@
         height: 200px;
         margin-bottom: 10px;
         padding: 20px 10px;
+        resize: none;
         @include secondaryFont(20);
     }
 
@@ -313,12 +314,16 @@
 
     &__aside {
         width: 32%;
-        background: $white-shade;
+        // background: $white-shade;
         
         &-box {
             padding: 20px;
             background: white;
             margin-bottom: 20px;
+        }
+
+        &-list {
+            padding-left: 15px;
         }
 
         &-img-container {
@@ -329,12 +334,62 @@
         &-text {
             @extend .section__text;
             margin: 0;
-        }   
+        }
+
+        &-post {
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+        
+        &-link {
+            @include secondaryFont(20);
+        }
     }
     
 
     &__post-container {
         width: 63%;
+    }
+    
+    &__post-box {
+        width: 100%;
+        background: white;
+        padding: 20px;
+        margin-bottom: 25px;
+
+        &--border {
+            border-bottom: 5px solid $dusk-Blue;
+        }
+
+        &--author {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &--form {
+            padding: 0;
+        }
+    }
+
+    &__post-img-container{
+        width: 15%;
+    }
+
+    &__post-text {
+        @extend .section__text;
+        &--author {
+            width: 80%;
+        }
+
+        &-date {
+            display: block;
+        }
+    }
+
+    &__post-form {
+        @extend .contact__form;
+        width: 100%;
+
     }
 
 
