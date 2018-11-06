@@ -27,7 +27,7 @@ html {
 
 .wrapper {
     max-width: 1280px;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -61,6 +61,10 @@ html {
         // @extend .font2;
         margin:0;
     }
+
+    &--mobile {
+        display:none;
+    }
 }
 
 .font3 {
@@ -75,6 +79,10 @@ html {
 
 ::placeholder {
     color: $black;
+}
+
+.fixedPosition {
+    position: fixed;
 }
 
 

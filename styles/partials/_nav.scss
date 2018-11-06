@@ -10,7 +10,7 @@
     }
 
     &__list {
-        width: 60%;
+        width: 70%;
         // flex: 1 0 50%;
         list-style: none;
         display: flex;
@@ -40,8 +40,43 @@
             color: $white-shade;
 
         }
-
     }
 
+    &__hamburger {
+        display: none;
+    }
 
+    &__mobile {
+        position: fixed;
+        background: $dusk-Blue;
+        z-index: 10;
+        width: 100%;
+        right: -100%;
+        top: 0;
+        height: 100%;
+        transition: all 0.5s;
+        padding-top: 2%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__mobile-link {
+        @include secondaryFont(24);
+    }
+
+    &__mobile-close {
+        @extend .nav__mobile-link;
+    }
+
+}
+
+.toggle {
+    display: none;
+
+    &:checked+.nav__mobile {
+        right: 0;
+    }
 }

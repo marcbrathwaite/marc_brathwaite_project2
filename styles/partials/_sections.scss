@@ -67,7 +67,11 @@
         width: 47.5%;
         margin-right: 5%;
         flex-direction: column;
-        align-items: flex-start; /*new*/
+        align-items: flex-start;
+
+        &:last-of-type {
+            margin-right:0;
+        }
     }
 
     &__link {
@@ -156,7 +160,8 @@
     padding: 50px 0;
 
     &__block {
-        @extend .icon-sec__block;
+        // @extend .icon-sec__block;
+        display: flex;
 
         &:first-of-type {
             margin-bottom: 50px;

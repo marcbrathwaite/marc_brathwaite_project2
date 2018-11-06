@@ -15,6 +15,37 @@
 <body>
     <header class="header">
         <nav class="nav wrapper">
+
+            <input type="checkbox" id="toggle" name="toggle" class="toggle">
+
+            <ul class="nav__mobile">
+                <li>
+                    <label for="toggle" class="nav__mobile-close">
+                        <i class="fas fa-times"></i>
+                    </label>
+                </li>
+                <li>
+                    <a href="./index.html" class="nav__mobile-link">Home</a>
+                </li>
+                <li>
+                    <a href="./index.html#about" class="nav__mobile-link">About</a>
+                </li>
+                <li>
+                    <a href="./blog.html" class="nav__mobile-link">Blog</a>
+                </li>
+                <li>
+                    <a href="./contact.html" class="nav__mobile-link">Contact</a>
+                </li>
+            </ul>
+
+            <h2 class="font2 font2--mobile">
+                <a href="./index.html" class="nav__mobile-head">Harper</a>
+            </h2>
+
+            <label for="toggle" class="nav__hamburger">
+                <i class="fas fa-bars"></i>
+            </label>
+
             <ul class="nav__list">
                 <li class="nav__item">
                     <a href="./index.html" class="nav__link nav__link--active">Home</a>
@@ -135,7 +166,7 @@
                 </div>
 
             </div>
-            <div class="wrapper blog-preview__block">
+            <div class="wrapper blog-preview__block blog-preview__block--reverse">
                 <div class="blog-preview__container-1 blog-preview__container-1--text">
                     <h3 class="font3">Favourite Things</h3>
                     <p class="section__text">
@@ -199,6 +230,9 @@
             Copyright © 2018 HackerYou
         </p>
     </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="./js/scripts.js"></script>
 
 </body>
 
