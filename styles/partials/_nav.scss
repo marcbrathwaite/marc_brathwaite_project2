@@ -64,7 +64,7 @@
     }
 
     &__mobile-link {
-        @include secondaryFont(24);
+        @include primaryFont(24);
     }
 
     &__mobile-close {

@@ -179,17 +179,17 @@
     }
 
     .photos__item {
-        width: 100%;
+        width: 75%;
         margin-bottom: 30px;
     }
 
-    .photos__link {
-        width: 100%;
+    // .photos__link {
+    //     width: 100%;
 
-        &:hover .photos__photo {
-            transform: none;
-        }
-    }
+    //     &:hover .photos__photo {
+    //         transform: none;
+    //     }
+    // }
 
     .photos__photo {
         width: 100%;

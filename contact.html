@@ -13,8 +13,38 @@
 </head>
 
 <body>
+    <a href="#mainContent" class="skipLink">Skip to main content</a>
     <header class="header header--other">
         <nav class="nav nav--other wrapper">
+            <input type="checkbox" id="toggle" name="toggle" class="toggle">
+
+            <ul class="nav__mobile">
+                <li>
+                    <label for="toggle" class="nav__mobile-close">
+                        <i class="fas fa-times"></i>
+                    </label>
+                </li>
+                <li>
+                    <a href="./index.html" class="nav__mobile-link">Home</a>
+                </li>
+                <li>
+                    <a href="./index.html#about" class="nav__mobile-link">About</a>
+                </li>
+                <li>
+                    <a href="./blog.html" class="nav__mobile-link">Blog</a>
+                </li>
+                <li>
+                    <a href="./contact.html" class="nav__mobile-link">Contact</a>
+                </li>
+            </ul>
+
+            <h2 class="font2 font2--mobile">
+                <a href="./index.html" class="nav__mobile-head">Harper</a>
+            </h2>
+
+            <label for="toggle" class="nav__hamburger">
+                <i class="fas fa-bars"></i>
+            </label>
             <ul class="nav__list">
                 <li class="nav__item">
                     <a href="./index.html" class="nav__link">Home</a>
@@ -41,7 +71,7 @@
             </div>
         </div>
     </header>
-    <main>
+    <main id="mainContent">
         <section class="section contact">
             <div class="wrapper contact__container">
                 <aside class="contact__aside">

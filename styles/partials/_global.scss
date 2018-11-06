@@ -85,5 +85,20 @@ html {
     position: fixed;
 }
 
+.skipLink {
+    position: absolute;
+    @include secondaryFont(20);
+    left: -1000px;
+    z-index: 999;
+    background: $black;
+    color: $white-shade;
+    border-radius: 0 0 3px 3px;
+    padding: 2px;
+}
+
+.skipLink:focus {
+    left: 0;
+}
+
 
 
