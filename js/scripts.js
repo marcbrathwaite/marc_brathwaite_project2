@@ -5,7 +5,7 @@ $(function () {
         $('body').removeClass("fixedPosition")
     });
     // When hamburger menu is clicked, set postion:fixed on the body. Unable to scroll when menu slides out.
-    $('.hamburger').on('click', function () {
+    $('.nav__hamburger').on('click', function () {
         $('body').addClass("fixedPosition")
     });
     // Remove position:fixed from body when X in Mobile Nav is clicked
