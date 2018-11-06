@@ -1093,6 +1093,9 @@ html {
 }
 
 @media (max-width: 1150px) {
+  .wrapper {
+    width: 90%;
+  }
   .harperjourney__text-container {
     width: 55%;
   }
@@ -1206,9 +1209,6 @@ html {
 }
 
 @media (max-width: 750px) {
-  .wrapper {
-    width: 90%;
-  }
   .header__container2 {
     display: none;
   }
