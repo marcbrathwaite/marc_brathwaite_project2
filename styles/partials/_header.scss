@@ -12,7 +12,7 @@
 
     &__text-container {
         position: relative;
-        width: 50%;
+        width: 55%;
         height: 100%;
         display:flex;
         padding-top:20%;
@@ -25,10 +25,10 @@
 
     &__img-container {
         position: absolute;
-        background: url("../img/home-image-1.jpg");
+        background: url("../img/home-image-1.jpg") center;
         background-size: cover;
-        width: 45%;
-        height: 450px;
+        width: 40%;
+        height: 480px;
         top: -300px;
         left: 0; /*new code*/
         box-shadow: 10px 10px white;
