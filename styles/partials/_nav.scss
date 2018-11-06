@@ -27,10 +27,21 @@
         text-decoration: none;
         @include primaryFont(20);
         line-height: 29px;
+        // transition: color 0.5s;
 
         &--active {
             color: $white-shade;
         }
-   
+
+        &:hover,
+        &:active,
+        &:hover .font2--nav,
+        &:active .font2--nav {
+            color: $white-shade;
+
+        }
+
     }
+
+
 }

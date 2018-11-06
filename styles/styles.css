@@ -292,7 +292,7 @@ html {
   transform: rotate(-30deg);
 }
 
-.font2, .font2--nav {
+.font2 {
   font-family: 'Oswald', sans-serif;
   color: #171717;
   font-weight: bold;
@@ -463,6 +463,12 @@ html {
   color: #f6f6f6;
 }
 
+.nav__link:hover, .nav__link:active,
+.nav__link:hover .font2--nav,
+.nav__link:active .font2--nav {
+  color: #f6f6f6;
+}
+
 .section {
   padding: 100px 0;
 }
@@ -487,6 +493,9 @@ html {
   line-height: 32px;
   padding: 10px 20px;
   background: #f38d8d;
+  -webkit-transition: background 0.5s, color 0.5s;
+  -o-transition: background 0.5s, color 0.5s;
+  transition: background 0.5s, color 0.5s;
 }
 
 .section__btn-container {
@@ -496,6 +505,11 @@ html {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+}
+
+.section__btn:hover, .contact__submit:hover, .section__btn:active, .contact__submit:active {
+  background: #171717;
+  color: #f38d8d;
 }
 
 .whoisharper, .icon-sec, .harperjourney, .contact, .blog {
@@ -538,39 +552,42 @@ html {
   display: flex;
   width: 47.5%;
   margin-right: 5%;
-}
-
-.icon-sec__container:last-of-type {
-  margin-right: 0;
-}
-
-.icon-sec__icon-container {
-  width: 10%;
-}
-
-.icon-sec__text-Container {
-  width: 90%;
-  margin-left: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  /*new*/
 }
 
 .icon-sec__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-family: 'Oswald', sans-serif;
   color: #171717;
   font-weight: bold;
   font-size: 18px;
   font-size: 1.8rem;
   text-transform: uppercase;
-  display: block;
   margin: 0;
-  height: 40px;
-  width: 40px;
-  background: #b9dde7;
-  border-radius: 50%;
+}
+
+.icon-sec__link:hover .icon-sec__icon,
+.icon-sec__link:active .icon-sec__icon {
+  background: #f38d8d;
+}
+
+.icon-sec__link:hover .icon-sec__heading,
+.icon-sec__link:active .icon-sec__heading {
+  color: #f38d8d;
 }
 
 .icon-sec__icon {
-  height: 100%;
-  width: 100%;
+  height: 40px;
+  width: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -580,6 +597,12 @@ html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  background: #b9dde7;
+  border-radius: 50%;
+  margin-right: 15px;
+  -webkit-transition: background 0.7s;
+  -o-transition: background 0.7s;
+  transition: background 0.7s;
 }
 
 .icon-sec__icon::before {
@@ -609,6 +632,17 @@ html {
 
 .icon-sec__icon--contact::before {
   content: "\f095";
+}
+
+.icon-sec__heading {
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.icon-sec__text {
+  margin-left: 55px;
+  /*New*/
 }
 
 .blog-preview {

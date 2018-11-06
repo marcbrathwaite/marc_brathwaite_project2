@@ -13,9 +13,17 @@
         line-height: 32px;
         padding: 10px 20px;
         background: $accent;
+        transition: background 0.5s, color 0.5s;
+
         &-container {
-            display:flex;
+            display: flex;
             justify-content: flex-end;
+        }
+
+        &:hover,
+        &:active {
+            background: $black;
+            color: $accent;
         }
     }
 
@@ -23,11 +31,12 @@
 
 .whoisharper {
     background: $white-shade;
-    
+
     &__container {
         display: flex;
-        justify-content: flex-end;  
+        justify-content: flex-end;
     }
+
     &__text-container {
         width: 50%
     }
@@ -35,7 +44,7 @@
 
 .building-pic {
     background: url("../img/home-image-2.jpg");
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     padding: 200px 0;
 }
@@ -50,46 +59,46 @@
         &:first-of-type {
             margin-bottom: 50px;
         }
-        
+
     }
 
     &__container {
         display: flex;
-        width:47.5%;
+        width: 47.5%;
         margin-right: 5%;
-
-        &:last-of-type {
-            margin-right: 0;
-        }
-        
+        flex-direction: column;
+        align-items: flex-start; /*new*/
     }
-
-    &__icon-container {
-        width: 10%;
-    }
-
-    &__text-Container {
-        width: 90%;
-        margin-left: 10px;
-    }
-
 
     &__link {
+        display: flex;
+        // justify-content: space-between;
         @include primaryFont(18);
-        display: block;
         margin: 0;
+        // width: 100%;
+        // width: 50%;
+
+        &:hover .icon-sec__icon,
+        &:active .icon-sec__icon {
+            background: $accent;
+        } 
+
+        &:hover .icon-sec__heading,
+        &:active .icon-sec__heading {
+            color: $accent;
+        }
+    }
+
+    &__icon {
         height: 40px;
         width: 40px;
-        background: $light-Grey-Blue;
-        border-radius: 50%;
-    }
-    
-    &__icon {
-        height: 100%;
-        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        background: $light-Grey-Blue;
+        border-radius: 50%;
+        margin-right: 15px;
+        transition: background 0.7s;
 
         &::before {
             display: block;
@@ -101,9 +110,9 @@
             -webkit-font-smoothing: antialiased;
             color: $black;
             height: 20px;
-            margin:0;
+            margin: 0;
         }
-        
+
         &--photos::before {
             content: "\f03e";
         }
@@ -120,13 +129,35 @@
             content: "\f095";
         }
     }
+
+    &__heading {
+        transition: color 0.5s;
+    }
+
+    &__text {
+        // width: 88%;
+        // align-self: flex-end;
+        margin-left: 55px; /*New*/
+    }
+
+
+    // &__icon-container {
+    //     width: 10%;
+    // }
+
+    // &__text-Container {
+    //     width: 90%;
+    //     margin-left: 10px;
+    // }
+
 }
 
 .blog-preview {
     padding: 50px 0;
+
     &__block {
         @extend .icon-sec__block;
-        
+
         &:first-of-type {
             margin-bottom: 50px;
         }
@@ -135,6 +166,7 @@
     &__container-1 {
         width: 50%; //New code
         position: relative;
+
         &--text {
             width: 40%; //New code
             margin-right: 10%; //New code
@@ -160,6 +192,7 @@
     &__container-2 {
         width: 50%;
         position: relative;
+
         &--text {
             width: 40%;
             margin-left: 10%;
@@ -190,7 +223,7 @@
 
 .photos {
     &__container {
-        display:flex;
+        display: flex;
         list-style: none;
         justify-content: space-between;
     }
@@ -204,7 +237,7 @@
     }
 
     &__link {
-        &:hover .photos__photo{
+        &:hover .photos__photo {
             transform: scale(1.2);
         }
     }
@@ -216,7 +249,7 @@
     @extend .whoisharper;
 
     &__container {
-        display:flex;
+        display: flex;
         justify-content: space-between;
         align-items: flex-start;
         flex-wrap: wrap;
@@ -259,7 +292,7 @@
         display: flex;
         flex-direction: column;
 
-        &-line{
+        &-line {
             display: block;
             margin-bottom: 5px;
         }
@@ -278,14 +311,14 @@
         border: none;
         background: white;
     }
-    
+
     &__info {
         width: 49%;
         padding: 10px;
         margin-bottom: 10px;
         @include secondaryFont(20);
     }
-    
+
     &__message {
         width: 100%;
         height: 200px;
@@ -315,7 +348,7 @@
     &__aside {
         width: 32%;
         // background: $white-shade;
-        
+
         &-box {
             padding: 20px;
             background: white;
@@ -330,7 +363,7 @@
             width: 100%;
             margin-bottom: 20px;
         }
-        
+
         &-text {
             @extend .section__text;
             margin: 0;
@@ -340,17 +373,17 @@
             margin-bottom: 10px;
             padding-left: 10px;
         }
-        
+
         &-link {
             @include secondaryFont(20);
         }
     }
-    
+
 
     &__post-container {
         width: 63%;
     }
-    
+
     &__post-box {
         width: 100%;
         background: white;
@@ -371,12 +404,13 @@
         }
     }
 
-    &__post-img-container{
+    &__post-img-container {
         width: 15%;
     }
 
     &__post-text {
         @extend .section__text;
+
         &--author {
             width: 80%;
         }
@@ -394,5 +428,3 @@
 
 
 }
-
-

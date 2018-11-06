@@ -58,7 +58,7 @@ html {
     @include primaryFont(42);
     margin-bottom: 20px;
     &--nav {
-        @extend .font2;
+        // @extend .font2;
         margin:0;
     }
 }
