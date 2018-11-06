@@ -1,3 +1,4 @@
+//Header styles
 .header {
     height: 500px;
     background: $light-Grey-Blue;
@@ -30,12 +31,12 @@
         width: 40%;
         height: 480px;
         top: -300px;
-        left: 0; /*new code*/
+        left: 0;
         box-shadow: 10px 10px white;
     }
 
     &__other-container {
-        height: 85%; //was 85
+        height: 85%;
         background-size: cover;
         
         &--contact {

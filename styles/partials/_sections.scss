@@ -1,3 +1,4 @@
+//General Section styles
 .section {
     padding: 100px 0;
 
@@ -29,6 +30,7 @@
 
 }
 
+//Who is harper section on Home Page
 .whoisharper {
     background: $white-shade;
 
@@ -42,16 +44,17 @@
     }
 }
 
+//Section with the pic of the building on the Home page
 .building-pic {
-    background: url("../img/home-image-2.jpg");
+    background: url("../img/home-image-2.jpg") center;
     background-size: cover;
-    background-position: center;
     padding: 200px 0;
 }
 
+
+//Section with the icon links onthe home page
 .icon-sec {
     @extend .whoisharper;
-
 
     &__block {
         display: flex;
@@ -59,7 +62,6 @@
         &:first-of-type {
             margin-bottom: 50px;
         }
-
     }
 
     &__container {
@@ -70,22 +72,19 @@
         align-items: flex-start;
 
         &:last-of-type {
-            margin-right:0;
+            margin-right: 0;
         }
     }
 
     &__link {
         display: flex;
-        // justify-content: space-between;
         @include primaryFont(18);
         margin: 0;
-        // width: 100%;
-        // width: 50%;
 
         &:hover .icon-sec__icon,
         &:active .icon-sec__icon {
             background: $accent;
-        } 
+        }
 
         &:hover .icon-sec__heading,
         &:active .icon-sec__heading {
@@ -139,28 +138,16 @@
     }
 
     &__text {
-        // width: 88%;
-        // align-self: flex-end;
-        margin-left: 55px; /*New*/
+        margin-left: 55px;
     }
-
-
-    // &__icon-container {
-    //     width: 10%;
-    // }
-
-    // &__text-Container {
-    //     width: 90%;
-    //     margin-left: 10px;
-    // }
 
 }
 
+//Blog section on the home page
 .blog-preview {
     padding: 50px 0;
 
     &__block {
-        // @extend .icon-sec__block;
         display: flex;
 
         &:first-of-type {
@@ -169,12 +156,12 @@
     }
 
     &__container-1 {
-        width: 50%; //New code
+        width: 50%;
         position: relative;
 
         &--text {
-            width: 40%; //New code
-            margin-right: 10%; //New code
+            width: 40%;
+            margin-right: 10%;
         }
     }
 
@@ -206,6 +193,7 @@
 
 }
 
+//Haper journey section on the home page
 .harperjourney {
     @extend .whoisharper;
 
@@ -215,7 +203,6 @@
     }
 
     &__photo-container {
-        // width: 30%;
         height: 50%;
         box-shadow: 10px 10px $dusk-Blue;
     }
@@ -226,7 +213,7 @@
 
 }
 
-//Home Page - Photo Gallery Section
+//Photo Gallery Section on homepage
 
 .photos {
     &__container {
@@ -238,7 +225,7 @@
     &__item {
         width: 30%;
         position: relative;
-        
+
         &:hover .photos__link {
             display: block;
         }
@@ -270,7 +257,6 @@
 
 }
 
-
 //Contact Page Sections
 .contact {
     @extend .whoisharper;
@@ -286,7 +272,6 @@
         background: white;
         width: 32%;
         padding: 20px;
-        // height: 40%;
     }
 
     &__social-media {
@@ -296,22 +281,11 @@
         justify-content: space-between;
     }
 
-    // &__sm-item {
-    //     padding: 0 20px;
-    //     &:first-of-type {
-    //         padding-left: 0;
-    //     }
-    // }
-
     &__sm-link {
         @include primaryFont(24);
         color: $dusk-Blue;
         // padding: 0 20px;
         transition: color 0.5s;
-
-        // &:first-of-type {
-        //     padding-left: 0;
-        // }
 
         &:hover,
         &:active {
@@ -326,7 +300,6 @@
     &__email {
         @include primaryFont(20);
         text-transform: none;
-        // border-bottom: 1px solid transparent;
         transition: border-bottom 0.5s;
 
         &:hover,
@@ -352,7 +325,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        // padding: 500px 0;
     }
 
     &__item {
@@ -383,6 +355,7 @@
     }
 }
 
+//Blog Page Sections
 .blog {
     @extend .whoisharper;
 
@@ -395,7 +368,6 @@
 
     &__aside {
         width: 32%;
-        // background: $white-shade;
 
         &-box {
             padding: 20px;
@@ -425,6 +397,7 @@
         &-link {
             @include secondaryFont(20);
             transition: border-bottom 0.5s;
+
             &:hover,
             &:active {
                 border-bottom: 1px solid $black;
@@ -481,8 +454,5 @@
     &__post-form {
         @extend .contact__form;
         width: 100%;
-
     }
-
-
 }

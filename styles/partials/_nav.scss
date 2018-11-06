@@ -1,12 +1,14 @@
+//Nav section Home page
 .nav {
     background: $light-Grey-Blue;
     display: flex;
     justify-content: center;
     padding: 10px 0;
-    height: 10%; //was 10%
+    height: 10%;
 
+    //Nav section on Blog and Contact pages
     &--other {
-        height: 15%; //was 15
+        height: 15%;
     }
 
     &__list {
@@ -14,11 +16,10 @@
         list-style: none;
         display: flex;
         justify-content: space-between;
-
     }
 
     &__item {
-        display:flex;
+        display: flex;
         align-items: center;
     }
 
@@ -36,10 +37,10 @@
         &:hover .font2--nav,
         &:active .font2--nav {
             color: $white-shade;
-
         }
     }
 
+    //Hamburger menu for mobile
     &__hamburger {
         display: none;
     }
@@ -68,9 +69,9 @@
     &__mobile-close {
         @extend .nav__mobile-link;
     }
-
 }
 
+//Check box for mobile functionality
 .toggle {
     display: none;
 
