@@ -374,7 +374,7 @@ html {
 }
 
 .header--other {
-  height: 400px;
+  height: 450px;
 }
 
 .header__container1 {
@@ -872,14 +872,9 @@ html {
   display: flex;
   list-style: none;
   margin-bottom: 15px;
-}
-
-.contact__sm-item {
-  padding: 0 20px;
-}
-
-.contact__sm-item:first-of-type {
-  padding-left: 0;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .contact__sm-link {
@@ -1080,6 +1075,11 @@ html {
   display: block;
 }
 
+.blog__post-text-link {
+  color: #171717;
+  text-decoration: underline;
+}
+
 .blog__post-form {
   width: 100%;
 }
@@ -1228,6 +1228,12 @@ html {
 }
 
 @media (max-width: 750px) {
+  .header--other {
+    height: 325px;
+  }
+  .header__other-text {
+    bottom: -30px;
+  }
   .nav__list {
     display: none;
   }
@@ -1242,6 +1248,7 @@ html {
   .font2--mobile,
   .nav__hamburger {
     display: block;
+    margin: 0;
   }
   .nav {
     -webkit-box-pack: justify;
@@ -1250,6 +1257,9 @@ html {
     -ms-flex-line-pack: center;
     align-content: center;
     height: 15%;
+  }
+  .nav--other {
+    height: 20%;
   }
   .nav__mobile-head {
     color: #171717;
@@ -1281,8 +1291,10 @@ html {
     margin-bottom: 35px;
     margin-left: 0;
   }
-  .photos {
-    padding-bottom: 25px;
+  .photos,
+  .blog,
+  .contact {
+    padding-bottom: 50px;
   }
   .photos__container {
     -webkit-box-orient: vertical;
@@ -1302,6 +1314,58 @@ html {
   }
   .photos__photo {
     width: 100%;
+  }
+  .contact__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .contact__aside {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .contact__social-media {
+    margin: 0 auto 15px auto;
+    width: 60%;
+  }
+  .contact__form, .blog__post-form {
+    width: 100%;
+  }
+  .blog__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .blog__aside {
+    width: 100%;
+    text-align: center;
+  }
+  .blog__aside-img {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .blog__post-container {
+    width: 100%;
+  }
+  .blog__post-box--author {
+    display: block;
+  }
+  .blog__post-img-container {
+    width: auto;
+    float: left;
+    margin-right: 15px;
+  }
+  .blog__post-text--author {
+    width: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .header__other-text {
+    font-size: 5rem;
   }
 }
 

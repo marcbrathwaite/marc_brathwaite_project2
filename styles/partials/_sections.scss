@@ -271,7 +271,7 @@
 }
 
 
-//Possibly consolidate contact and blog
+//Contact Page Sections
 .contact {
     @extend .whoisharper;
 
@@ -293,14 +293,15 @@
         display: flex;
         list-style: none;
         margin-bottom: 15px;
+        justify-content: space-between;
     }
 
-    &__sm-item {
-        padding: 0 20px;
-        &:first-of-type {
-            padding-left: 0;
-        }
-    }
+    // &__sm-item {
+    //     padding: 0 20px;
+    //     &:first-of-type {
+    //         padding-left: 0;
+    //     }
+    // }
 
     &__sm-link {
         @include primaryFont(24);
@@ -469,6 +470,11 @@
 
         &-date {
             display: block;
+        }
+
+        &-link {
+            color: $black;
+            text-decoration: underline;
         }
     }
 

@@ -2,7 +2,7 @@
     height: 500px;
     background: $light-Grey-Blue;
     &--other {
-        height: 400px;
+        height: 450px;
     }
     &__container1 {
         height: 70%;
@@ -35,7 +35,7 @@
     }
 
     &__other-container {
-        height: 85%;
+        height: 85%; //was 85
         background-size: cover;
         
         &--contact {

@@ -3,15 +3,14 @@
     display: flex;
     justify-content: center;
     padding: 10px 0;
-    height: 10%;
+    height: 10%; //was 10%
 
     &--other {
-        height: 15%;
+        height: 15%; //was 15
     }
 
     &__list {
         width: 70%;
-        // flex: 1 0 50%;
         list-style: none;
         display: flex;
         justify-content: space-between;
@@ -27,7 +26,6 @@
         text-decoration: none;
         @include primaryFont(20);
         line-height: 29px;
-        // transition: color 0.5s;
 
         &--active {
             color: $white-shade;
