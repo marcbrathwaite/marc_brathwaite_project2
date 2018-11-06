@@ -268,13 +268,26 @@
         margin-bottom: 15px;
     }
 
+    &__sm-item {
+        padding: 0 20px;
+        &:first-of-type {
+            padding-left: 0;
+        }
+    }
+
     &__sm-link {
         @include primaryFont(24);
         color: $dusk-Blue;
-        padding: 0 20px;
+        // padding: 0 20px;
+        transition: color 0.5s;
 
-        &:first-of-type {
-            padding-left: 0;
+        // &:first-of-type {
+        //     padding-left: 0;
+        // }
+
+        &:hover,
+        &:active {
+            color: $accent;
         }
     }
 
@@ -285,6 +298,13 @@
     &__email {
         @include primaryFont(20);
         text-transform: none;
+        // border-bottom: 1px solid transparent;
+        transition: border-bottom 0.5s;
+
+        &:hover,
+        &:active {
+            border-bottom: 1px solid $black;
+        }
     }
 
     &__address {
@@ -376,6 +396,11 @@
 
         &-link {
             @include secondaryFont(20);
+            transition: border-bottom 0.5s;
+            &:hover,
+            &:active {
+                border-bottom: 1px solid $black;
+            }
         }
     }
 
